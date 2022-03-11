@@ -14,4 +14,9 @@ public class Sort {
         }
     };
 
+    static Comparator<Contacts> compareFirstName = new Comparator<Contacts>() {
+        public int compare(Contacts one, Contacts two) {
+            return one.getFirstName().compareTo(two.getFirstName());
+        }
+    };
 }
