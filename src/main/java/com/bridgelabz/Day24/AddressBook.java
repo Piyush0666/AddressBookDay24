@@ -18,7 +18,7 @@ public class AddressBook {
         boolean status = true;
         do {
 
-            System.out.println("Enter the number according to to requirment");
+            System.out.println("Enter the number according to to requirement");
             System.out.println("Enter 1 to Add");
             System.out.println("Enter 2 to Edit");
             System.out.println("Enter 3 to Delete");
@@ -142,9 +142,12 @@ public class AddressBook {
     }
 
     public void countList() {
-        Long total;
-        total = list.stream().count();
+        Long total = list.stream().count();
         System.out.println(total);
+    }
+
+    public void sortByFirstName() {
+        Collections.sort(list, Sort.compareFirstName);
     }
 
     public void sortCity() {
