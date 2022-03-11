@@ -2,7 +2,8 @@ package com.bridgelabz.Day24;
 
 import java.util.Comparator;
 
-public class Sort {
+public class Sort
+{
     static Comparator<Contacts> compareCity = new Comparator<Contacts>() {
         public int compare(Contacts one, Contacts two) {
             return one.getCity().compareTo(two.getCity());
@@ -17,6 +18,11 @@ public class Sort {
     static Comparator<Contacts> compareFirstName = new Comparator<Contacts>() {
         public int compare(Contacts one, Contacts two) {
             return one.getFirstName().compareTo(two.getFirstName());
+        }
+    };
+    static Comparator<Contacts> compareZip = new Comparator<Contacts>() {
+        public int compare(Contacts one, Contacts two) {
+            return one.getZip().compareTo(two.getZip());
         }
     };
 }
