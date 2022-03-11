@@ -49,7 +49,6 @@ public class Contacts
     public void setState(String state) {
         this.state = state;
     }
-
     public String getZip() {
         return zip;
     }

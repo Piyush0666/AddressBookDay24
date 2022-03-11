@@ -1,9 +1,6 @@
 package com.bridgelabz.Day24;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class AddressBook
 {
@@ -22,7 +19,7 @@ public class AddressBook
         boolean status = true;
         do {
 
-            System.out.println("Enter the number according to to requirement");
+            System.out.println("Enter the number according to to requirment");
             System.out.println("Enter 1 to Add");
             System.out.println("Enter 2 to Edit");
             System.out.println("Enter 3 to Delete");
@@ -143,7 +140,10 @@ public class AddressBook
         while (it.hasNext()) {
             System.out.println(it.next());
         }
-    }
+    } public void sortCity() {
+    Collections.sort(list, Sort.compareCity);
+}
+
     @Override
     public String toString() {
         return "AddressBook{" +
