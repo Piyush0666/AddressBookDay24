@@ -13,5 +13,4 @@ public class Sort {
             return one.getState().compareTo(two.getState());
         }
     };
-
 }
