@@ -10,5 +10,4 @@ class AddressBookMainTest {
     {
         assertTrue( true );
     }
-
 }
