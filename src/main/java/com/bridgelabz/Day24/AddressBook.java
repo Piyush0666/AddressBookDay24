@@ -33,7 +33,7 @@ public class AddressBook {
                     delete();
                     break;
                 default:
-                    status = false;
+                    status =false;
             }
         } while (status);
     }
