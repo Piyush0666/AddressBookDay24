@@ -7,9 +7,9 @@ import java.util.Scanner;
 public class AddressBookMain
 {
     static Scanner scan = new Scanner(System.in);
-    public static void main( String[] args )
-    {
-        System.out.println( "WELCOME TO ADDRESS BOOK PROGRAM" );
+
+    public static void main(String[] args) {
+        System.out.println("WELCOME TO ADDRESS BOOK PROGRAM");
         Map<String, AddressBook> map = new HashMap<>();
         System.out.println("Enter Number of address book you want to add");
         int count = scan.nextInt();
